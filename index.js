@@ -17,7 +17,7 @@ export default {
             false: 'خیر',
         },
         page: {
-            list: '%{name} لیست',
+            list: 'لیست %{name}',
             edit: '%{name} #%{id}',
             show: '%{name} #%{id}',
             create: 'ایجاد %{name}',
@@ -45,7 +45,7 @@ export default {
             page_out_of_boundaries: 'شماره صفحه %{page} خارج از محدوده است',
             page_out_from_end: 'نمی‌توان به بعد از صفحه آخر رفت',
             page_out_from_begin: 'نمی‌توان به قبل از صفحه اول رفت',
-            page_range_info: '%{offsetBegin}-%{offsetEnd} از %{total}',
+            page_range_info: '{offsetBegin}%-{offsetEnd}% از {total}%',
             next: 'بعدی',
             prev: 'قبلی',
         },
@@ -74,3 +74,4 @@ export default {
         },
     },
 };
+
