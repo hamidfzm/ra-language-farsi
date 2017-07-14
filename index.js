@@ -45,7 +45,7 @@ export default {
             page_out_of_boundaries: 'شماره صفحه %{page} خارج از محدوده است',
             page_out_from_end: 'نمی‌توان به بعد از صفحه آخر رفت',
             page_out_from_begin: 'نمی‌توان به قبل از صفحه اول رفت',
-            page_range_info: ' از %{total}%{offsetBegin}-%{offsetEnd}',
+            page_range_info: '%{offsetBegin}-%{offsetEnd} (کل: %{total})',
             next: 'بعدی',
             prev: 'قبلی',
         },
