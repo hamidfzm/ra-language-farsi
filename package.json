@@ -1,6 +1,6 @@
 {
   "name": "aor-language-farsi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Farsi translations for admin-on-rest, the frontend framework for building admin applications on top of REST services",
   "main": "index.js",
   "scripts": {
