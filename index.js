@@ -7,7 +7,7 @@ export default {
             save: 'ذخیره',
             create: 'ایجاد',
             edit: 'ویرایش',
-            cancel: 'کنسل',
+            cancel: 'انصراف',
             refresh: 'بروز‌رسانی',
             add_filter: 'اضافه‌کردن فیلتر',
             remove_filter: 'حذف این فیلتر',
