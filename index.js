@@ -7,10 +7,11 @@ export default {
             save: 'ذخیره',
             create: 'ایجاد',
             edit: 'ویرایش',
-            cancel: 'کنسل',
+            cancel: 'انصراف',
             refresh: 'بروز‌رسانی',
             add_filter: 'اضافه‌کردن فیلتر',
             remove_filter: 'حذف این فیلتر',
+            back: 'بازگشت',
         },
         boolean: {
             true: 'بله',
@@ -23,8 +24,12 @@ export default {
             create: 'ایجاد %{name}',
             delete: 'حذف %{name} #%{id}',
             dashboard: 'داشبورد',
+            not_found: 'پیدا نشد'
         },
         input: {
+            autocomplete: {
+                none: 'هیچ',
+            },
             file: {
                 upload_several: 'تعدادی فایل برای آپلود دراپ کنید، یا برای انتخاب آن‌ها کلیک کنید.',
                 upload_single: 'فایلی را برای آپلود دراپ کنید، یا برای انتخاب آن کلیک کنید',
@@ -33,12 +38,18 @@ export default {
                 upload_several: 'تعدادی عکس برای آپلود دراپ کنید، یا برای انتخاب آن‌ها کلیک کنید.',
                 upload_single: 'عکسی را برای آپلود دراپ کنید، یا برای انتخاب آن کلیک کنید',
             },
+            references: {
+                all_missing: 'امکان پیدا کردن اطلاعات ارجاعی وجود ندارد.',
+                many_missing: 'حداقل یکی از مراجع در دسترس نیست.',
+                single_missing: 'مرجع مورد نظر در دسترس نیست.',
+            },
         },
         message: {
             yes: 'بله',
             no: 'خیر',
             are_you_sure: 'آیا اطمینان دارید ؟',
             about: 'درباره',
+            not_found: 'شما یک نشانی اینترنتی اشتباه تایپ کردید یا پیغام بدی را دنبال کردید.',
         },
         navigation: {
             no_results: 'نتیجه‌ای پیدا نشد',
@@ -62,6 +73,7 @@ export default {
             deleted: 'المان حذف شد',
             item_doesnt_exist: 'المان پیدا نشد',
             http_error: 'خطا در برقراری ارتباط با سرور',
+            bad_item: 'المان اشتباه',
         },
         validation: {
             required: 'اجباری',
