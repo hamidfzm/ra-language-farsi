@@ -1,19 +1,19 @@
-# Farsi Translations for Admin-on-rest
+# Farsi Translations for React-Admin
 
-Farsi translations for [admin-on-rest](https://github.com/marmelab/admin-on-rest), the frontend framework for building admin applications on top of REST services.
+Farsi translations for [React-Admin](https://github.com/marmelab/react-admin), the frontend framework for building admin applications on top of REST/GraphQL services.
 
-![admin-on-rest demo](http://static.marmelab.com/admin-on-rest.gif)
+![react-admin demo](http://static.marmelab.com/react-admin.gif)
 
 ## Installation
 
 ```sh
-npm install --save aor-language-farsi
+npm install --save ra-language-farsi
 ```
 
 ## Usage
 
 ```js
-import farsiMessages from 'aor-language-farsi';
+import farsiMessages from 'ra-language-farsi';
 
 const messages = {
     'fa': farsiMessages,
