@@ -1,24 +1,25 @@
 {
-  "name": "aor-language-farsi",
+  "name": "ra-language-farsi",
   "version": "0.2.0",
-  "description": "Farsi translations for admin-on-rest, the frontend framework for building admin applications on top of REST services",
+  "description": "Farsi translations for React-Admin, the frontend framework for building admin applications on top of REST/GraphQL services.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hamidfzm/aor-language-farsi.git"
+    "url": "git+https://github.com/hamidfzm/ra-language-farsi.git"
   },
   "keywords": [
     "react",
     "admin-on-rest",
+    "react-admin",
     "translation"
   ],
   "author": "Hamid FzM",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/hamidfzm/aor-language-farsi/issues"
+    "url": "https://github.com/hamidfzm/ra-language-farsi/issues"
   },
-  "homepage": "https://github.com/hamidfzm/aor-language-farsi#readme"
+  "homepage": "https://github.com/hamidfzm/ra-language-farsi#readme"
 }
