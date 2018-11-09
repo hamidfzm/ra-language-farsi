@@ -19,7 +19,9 @@ const messages = {
     'fa': farsiMessages,
 };
 
-<Admin locale="fa" messages={messages}>
+const i18nProvider = locale => messages[locale];
+
+<Admin locale="fa" i18nProvider={i18nProvider}>
   ...
 </Admin>
 ```
