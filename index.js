@@ -12,24 +12,31 @@ export default {
             add_filter: 'اضافه‌کردن فیلتر',
             remove_filter: 'حذف این فیلتر',
             back: 'بازگشت',
+            add: 'اضافه',
+            bulk_actions: '۱ آیتم انتخاب شد |||| %{smart_count} عدد از آیتم‌ها انتخاب شدند',
+            clear_input_value: 'پاک‌کردن مقدار',
+            clone: 'شبیه‌سازی',
+            export: 'دریافت خروجی',
+            remove: 'حذف',
+            search: 'جست‌وجو',
+            sort: 'مرتب‌سازی',
+            undo: 'لغو',
         },
         boolean: {
             true: 'بله',
             false: 'خیر',
         },
         page: {
-            list: 'لیست %{name}',
-            edit: '%{name} #%{id}',
-            show: '%{name} #%{id}',
             create: 'ایجاد %{name}',
-            delete: 'حذف %{name} #%{id}',
             dashboard: 'داشبورد',
-            not_found: 'پیدا نشد'
+            edit: '%{name} #%{id}',
+            error: 'مشکلی ایجاد شد',
+            list: 'لیست %{name}',
+            loading: 'در حال بارگزاری',
+            not_found: 'پیدا نشد',
+            show: '%{name} #%{id}',
         },
         input: {
-            autocomplete: {
-                none: 'هیچ',
-            },
             file: {
                 upload_several: 'تعدادی فایل برای آپلود دراپ کنید، یا برای انتخاب آن‌ها کلیک کنید.',
                 upload_single: 'فایلی را برای آپلود دراپ کنید، یا برای انتخاب آن کلیک کنید',
@@ -50,6 +57,15 @@ export default {
             are_you_sure: 'آیا اطمینان دارید ؟',
             about: 'درباره',
             not_found: 'شما یک نشانی اینترنتی اشتباه تایپ کردید یا پیغام بدی را دنبال کردید.',
+            bulk_delete_content:
+                'آیا از حذف  %{name} اطمینان دارید؟ |||| آیا از حدف %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
+            bulk_delete_title: 'حذف %{name} |||| حذف %{smart_count} عدد از آیتم‌های %{name}',
+            delete_content: 'آیا از حذف این آیتم اطمینان دارید؟',
+            delete_title: 'حذف %{name} #%{id}',
+            details: 'جزییات',
+            error: "خطایی در مرورگر رخ داد. درخواست شما کامل نشد",
+            invalid_form: 'فرم درست پر نشده است. لطفا خطاها را بررسی کنید',
+            loading: 'صفحه در حال بارگزاری است، چند لحظه صبر کنید',
         },
         navigation: {
             no_results: 'نتیجه‌ای پیدا نشد',
@@ -59,6 +75,8 @@ export default {
             page_range_info: '%{offsetBegin}-%{offsetEnd} (کل: %{total})',
             next: 'بعدی',
             prev: 'قبلی',
+            no_more_results: 'شماره صفحه‌ی %{page} خارج از محدوده مجاز است. صفحه قبل را امتحان کنید.',
+            page_rows_per_page: 'تعداد ردیف‌ها در صفحه:',
         },
         auth: {
             username: 'نام‌کاربری',
@@ -66,6 +84,7 @@ export default {
             sign_in: 'ورود',
             sign_in_error: 'شناسایی با شکست مواجه شد، دوباره تلاش کنید',
             logout: 'خروج',
+            user_menu: 'پروفایل',
         },
         notification: {
             updated: 'المان بروز‌رسانی شد',
@@ -74,6 +93,8 @@ export default {
             item_doesnt_exist: 'المان پیدا نشد',
             http_error: 'خطا در برقراری ارتباط با سرور',
             bad_item: 'المان اشتباه',
+            data_provider_error: 'خطا در دریافت اطلاعات',
+            canceled: 'لغو شد',
         },
         validation: {
             required: 'اجباری',
@@ -83,6 +104,8 @@ export default {
             maxValue: 'باید %{max} یا کمتر باشد',
             number: 'باید یک عدد باشد',
             email: 'باید یک آدرس ایمیل صحیح باشد',
+            oneOf: 'باید انتخابی از این گزینه‌ها باشد: %{options}',
+            regex: 'باید با فرمت خاصی هماهنگ باشد (regexp): %{pattern}',
         },
     },
 };
