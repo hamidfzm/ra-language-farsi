@@ -8,7 +8,7 @@ export default {
             cancel: 'انصراف',
             clear_input_value: 'پاک‌کردن مقدار',
             clone: 'شبیه‌سازی',
-            // confirm: 'Confirm',
+            confirm: 'تایید',
             create: 'ایجاد',
             delete: 'حذف',
             edit: 'ویرایش',
@@ -96,7 +96,7 @@ export default {
             http_error: 'خطا در برقراری ارتباط با سرور',
             data_provider_error: 'خطا در دریافت اطلاعات',
             canceled: 'لغو شد',
-            // logged_out: 'Your session has ended, please reconnect.',
+            logged_out: 'نشست کاربری شما به پایان زسیده‌است، لطفا دوباره وصل شوید.',
         },
         validation: {
             required: 'اجباری',
