@@ -19,7 +19,7 @@ import polyglotI18nProvider from 'ra-i18n-polyglot';
 
 const i18nProvider = polyglotI18nProvider(() => farsiMessages, 'fa');
 
-<Admin locale="fa" i18nProvider={i18nProvider}>
+<Admin i18nProvider={i18nProvider}>
   ...
 </Admin>
 ```
