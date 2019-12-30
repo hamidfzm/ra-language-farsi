@@ -14,14 +14,12 @@ npm install --save ra-language-farsi
 
 ```js
 import farsiMessages from 'ra-language-farsi';
+import polyglotI18nProvider from 'ra-i18n-polyglot';
 
-const messages = {
-    'fa': farsiMessages,
-};
 
-const i18nProvider = locale => messages[locale];
+const i18nProvider = polyglotI18nProvider(() => farsiMessages, 'fa');
 
-<Admin locale="fa" i18nProvider={i18nProvider}>
+<Admin i18nProvider={i18nProvider}>
   ...
 </Admin>
 ```
@@ -55,6 +53,12 @@ const App = () => (
 </noscript>
 <div id="root" dir="rtl"></div>
 </body>
+```
+or in css of body add :
+```css
+body {
+  direction: rtl;
+}
 ```
 
 
