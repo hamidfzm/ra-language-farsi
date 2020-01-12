@@ -58,16 +58,16 @@ body {
 
 Or Pure JS:
 ```js
-document.getElementsByTagName("body")[0].setAttribute("dir", "rtl");
+document.getElementsByTagName("body")[0].setAttribute('dir', 'rtl');
 ```
 
 2. Define a theme and set `direction` to `rtl`. Also defining an RTL theme might be not enough to flip all React Admin components. So we use [**jss-rtl**](https://github.com/alitaheri/jss-rtl) plugin to make sure everything works properly.
 
 ```javascript
 import { createMuiTheme } from '@material-ui/core/styles';
-import {create} from "jss";
-import rtl from "jss-rtl";
-import {StylesProvider, jssPreset} from "@material-ui/core/styles";
+import {create} from 'jss';
+import rtl from 'jss-rtl';
+import {StylesProvider, jssPreset} from '@material-ui/core/styles';
 
 // Configure JSS
 const jss = create({plugins: [...jssPreset().plugins, rtl()]});
