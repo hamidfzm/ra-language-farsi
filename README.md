@@ -34,11 +34,12 @@ const i18nProvider = polyglotI18nProvider(locale => messages[locale], 'fa');
 ```
 
 ## RTL
-Material UI is already supprting RTL, so we can add its support to react admin using these 2 steps:
+Material UI is already supprting RTL, so we can add its support to React Admin using these 2 steps:
 
-1. Change **dir** property to **rtl** in your root elements (like body). You can also connect this property to redux.
-*public/index.html*
+1. Change `dir` property to `rtl` in your root elements (like body).
 
+
+Using HTML (*public/index.html*):
 ```html
 <body>
 <noscript>
@@ -48,28 +49,42 @@ Material UI is already supprting RTL, so we can add its support to react admin u
 </body>
 ```
 
-Or `body` CSS:
+Using CSS style:
 ```css
 body {
   direction: rtl;
 }
 ```
 
-2. Define a theme and set **direction** to **rtl**.
+Or Pure JS:
+```js
+document.getElementsByTagName("body")[0].setAttribute("dir", "rtl");
+```
+
+2. Define a theme and set `direction` to `rtl`. Also defining an RTL theme might be not enough to flip all React Admin components. So we use [**jss-rtl**](https://github.com/alitaheri/jss-rtl) plugin to make sure everything works properly.
 
 ```javascript
 import { createMuiTheme } from '@material-ui/core/styles';
+import {create} from "jss";
+import rtl from "jss-rtl";
+import {StylesProvider, jssPreset} from "@material-ui/core/styles";
+
+// Configure JSS
+const jss = create({plugins: [...jssPreset().plugins, rtl()]});
 
 const theme = createMuiTheme({
   direction: 'rtl',
 });
 
 const App = () => (
-    <Admin theme={theme}>
-        // ...
-    </Admin>
+    <StylesProvider jss={jss}>
+        <Admin theme={theme}>
+            // ...
+        </Admin>
+    </StylesProvider>
 );
 ```
+
 
 ## License
 
