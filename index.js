@@ -22,10 +22,13 @@ export default {
             show: 'نمایش',
             sort: 'مرتب‌سازی',
             undo: 'لغو',
+            expand: 'باز کن',
+            close: 'ببند',
         },
         boolean: {
             true: 'بله',
             false: 'خیر',
+            null: '',
         },
         page: {
             create: 'ایجاد %{name}',
@@ -36,6 +39,8 @@ export default {
             loading: 'در حال بارگزاری',
             not_found: 'پیدا نشد',
             show: '%{name} #%{id}',
+            empty: 'هنوز %{name} وجود ندارد.',
+            invite: 'آبا میخواهید یک مورد اضافه کنید؟',
         },
         input: {
             file: {
