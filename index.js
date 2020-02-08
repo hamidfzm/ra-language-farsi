@@ -39,8 +39,8 @@ export default {
             loading: 'در حال بارگزاری',
             not_found: 'پیدا نشد',
             show: '%{name} #%{id}',
-            empty: 'هنوز %{name} وجود ندارد.',
-            invite: 'آبا میخواهید یک مورد اضافه کنید؟',
+            empty: 'هنوز سطری از %{name} وجود ندارد.',
+            invite: 'آیا میخواهید یک مورد اضافه کنید؟',
         },
         input: {
             file: {
