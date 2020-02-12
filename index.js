@@ -56,6 +56,10 @@ export default {
                 many_missing: 'حداقل یکی از مراجع در دسترس نیست.',
                 single_missing: 'مرجع مورد نظر در دسترس نیست.',
             },
+            password: {
+                toggle_visible: 'پنهان کردن رمز عبور',
+                toggle_hidden: 'نمایش رمز عبور',
+            },
         },
         message: {
             about: 'درباره',
