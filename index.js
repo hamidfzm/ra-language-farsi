@@ -85,7 +85,7 @@ export default {
             prev: 'قبلی',
         },
         auth: {
-            auth_check_error: 'لطفا برای ادامه وارد شویذ',
+            auth_check_error: 'لطفا برای ادامه وارد شوید',
             user_menu: 'پروفایل',
             username: 'نام‌کاربری',
             password: 'رمز عبور',
