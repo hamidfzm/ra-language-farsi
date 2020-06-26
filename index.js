@@ -24,7 +24,7 @@ export default {
             undo: 'لغو',
             unselect: 'عدم انتخاب',
             expand: 'باز کن',
-            close: 'ببند',
+            close: 'بستن',
             close_menu: 'بستن منو',
             open_menu: 'باز کردن منو',
         },
