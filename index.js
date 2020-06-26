@@ -22,8 +22,11 @@ export default {
             show: 'نمایش',
             sort: 'مرتب‌سازی',
             undo: 'لغو',
+            unselect: 'عدم انتخاب',
             expand: 'باز کن',
             close: 'ببند',
+            close_menu: 'بستن منو',
+            open_menu: 'باز کردن منو',
         },
         boolean: {
             true: 'بله',
@@ -76,6 +79,7 @@ export default {
             no: 'خیر',
             not_found: 'شما یک نشانی اینترنتی اشتباه تایپ کردید یا پیغام بدی را دنبال کردید.',
             yes: 'بله',
+            unsaved_changes: 'تغییرات شما ذخیره نشده اند. آیا مطمئن هستید که می خواهید از آنها چشم پوشی کنید؟',
         },
         navigation: {
             no_results: 'نتیجه‌ای پیدا نشد',
