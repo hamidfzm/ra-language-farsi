@@ -1,11 +1,22 @@
 {
   "name": "ra-language-farsi",
-  "version": "1.2.5",
+  "version": "2.0.0",
   "description": "Farsi translations for React-Admin, the frontend framework for building admin applications on top of REST/GraphQL services.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "tsc --outDir esm --module es2015 --watch"
   },
+  "files": [
+    "*.md",
+    "lib",
+    "esm",
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hamidfzm/ra-language-farsi.git"
@@ -14,12 +25,19 @@
     "react",
     "admin-on-rest",
     "react-admin",
-    "translation"
+    "translation",
+    "farsi-translation"
   ],
   "author": "Hamid FzM",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/hamidfzm/ra-language-farsi/issues"
   },
-  "homepage": "https://github.com/hamidfzm/ra-language-farsi#readme"
+  "homepage": "https://github.com/hamidfzm/ra-language-farsi#readme",
+  "dependencies": {
+    "ra-core": "^3.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.6"
+  }
 }

@@ -1,4 +1,6 @@
-export default {
+import { TranslationMessages } from 'ra-core';
+
+const farsiMessages: TranslationMessages = {
     ra: {
         action: {
             add_filter: 'اضافه‌کردن فیلتر',
@@ -102,6 +104,7 @@ export default {
             logout: 'خروج',
         },
         notification: {
+            i18n_error: 'بارگزاری ترجمه‌ها برای زبان مورد نظر امکان‌پذیر نیست',
             updated: 'المان بروز‌رسانی شد',
             created: 'المان ایجاد شد',
             deleted: 'المان حذف شد',
@@ -126,3 +129,4 @@ export default {
     },
 };
 
+export default farsiMessages;
