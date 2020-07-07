@@ -6,6 +6,7 @@
   "module": "esm/index.js",
   "types": "esm/index.d.ts",
   "scripts": {
+    "lint": "yarn eslint",
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
@@ -40,6 +41,20 @@
     "ra-core": "^3.7.0"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^9.0.1",
+    "commitlint": "^9.0.1",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
     "typescript": "^3.9.6"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn lint",
+      "post-checkout": "yarn install"
+    }
   }
 }
