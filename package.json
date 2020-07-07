@@ -41,6 +41,7 @@
     "ra-core": "^3.7.0"
   },
   "devDependencies": {
+    "ra-core": "^3.7.0",
     "@commitlint/config-conventional": "^9.0.1",
     "commitlint": "^9.0.1",
     "eslint": "^7.4.0",
