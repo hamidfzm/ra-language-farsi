@@ -1,6 +1,6 @@
 {
   "name": "ra-language-farsi",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Farsi translations for React-Admin, the frontend framework for building admin applications on top of REST/GraphQL services.",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -41,7 +41,6 @@
     "ra-core": "^3.7.0"
   },
   "devDependencies": {
-    "ra-core": "^3.7.0",
     "@commitlint/config-conventional": "^9.0.1",
     "commitlint": "^9.0.1",
     "eslint": "^7.4.0",
@@ -49,6 +48,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
+    "ra-core": "^3.7.0",
     "typescript": "^3.9.6"
   },
   "husky": {

@@ -93,6 +93,12 @@ const farsiMessages: TranslationMessages = {
             page_rows_per_page: 'تعداد ردیف‌ها در صفحه:',
             next: 'بعدی',
             prev: 'قبلی',
+            skip_nav: 'رفتن به محتوا'
+        },
+        sort: {
+            sort_by: 'مرتب‌سازی بر اساس %{field} %{order}',
+            ASC: 'صعودی',
+            DESC: 'نزولی',
         },
         auth: {
             auth_check_error: 'لطفا برای ادامه وارد شوید',
