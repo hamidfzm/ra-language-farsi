@@ -1,4 +1,4 @@
-import { TranslationMessages } from 'ra-core';
+import type { TranslationMessages } from 'ra-core';
 
 const farsiMessages: TranslationMessages = {
   ra: {
@@ -9,6 +9,7 @@ const farsiMessages: TranslationMessages = {
       bulk_actions:
         '۱ آیتم انتخاب شد |||| %{smart_count} عدد از آیتم‌ها انتخاب شدند',
       cancel: 'انصراف',
+      clear_array_input: 'پاک‌کردن لیست',
       clear_input_value: 'پاک‌کردن مقدار',
       clone: 'شبیه‌سازی',
       confirm: 'تایید',
@@ -20,6 +21,7 @@ const farsiMessages: TranslationMessages = {
       list: 'لیست',
       refresh: 'بروز‌رسانی',
       remove_filter: 'حذف این فیلتر',
+      remove_all_filters: 'حذف همه‌ی فیلترها',
       remove: 'حذف',
       save: 'ذخیره',
       search: 'جست‌وجو',
@@ -38,6 +40,7 @@ const farsiMessages: TranslationMessages = {
       move_down: 'پایین آوردن',
       open: 'باز کن',
       toggle_theme: 'تغییر تم',
+      select_columns: 'ستون‌ها',
     },
     boolean: {
       true: 'بله',
@@ -82,10 +85,12 @@ const farsiMessages: TranslationMessages = {
     message: {
       about: 'درباره',
       are_you_sure: 'آیا اطمینان دارید ؟',
+      auth_error: 'خطا در احراز هویت',
       bulk_delete_content:
         'آیا از حذف  %{name} اطمینان دارید؟ |||| آیا از حدف %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
       bulk_delete_title:
         'حذف %{name} |||| حذف %{smart_count} عدد از آیتم‌های %{name}',
+      clear_array_input: 'آیا از حذف همه‌ی مقادیر اطمینان دارید؟',
       bulk_update_content:
         'آیا از بروز‌رسانی %{name} اطمینان ذارید؟ |||| آیا از بروز‌رسانی %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
       bulk_update_title:
