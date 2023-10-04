@@ -41,6 +41,7 @@ const farsiMessages: TranslationMessages = {
       open: 'باز کن',
       toggle_theme: 'تغییر تم',
       select_columns: 'ستون‌ها',
+      update_application: 'بروز‌رسانی برنامه',
     },
     boolean: {
       true: 'بله',
@@ -153,6 +154,7 @@ const farsiMessages: TranslationMessages = {
       canceled: 'لغو شد',
       logged_out: 'نشست کاربری شما به پایان زسیده‌است، لطفا دوباره وصل شوید.',
       not_authorized: 'شما اجازه دسترسی به این منبع را ندارید',
+      application_update_available: 'نسخه جدید برنامه در دسترس است',
     },
     validation: {
       required: 'اجباری',
