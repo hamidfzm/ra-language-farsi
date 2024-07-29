@@ -85,6 +85,12 @@ const App = () => (
 );
 ```
 
+## Version Compatibility
+- For React-Admin v5, use version 5.x of this package.
+- For React-Admin v4, use version 4.x of this package.
+- For React-Admin v3, use version 3.x of this package.
+- For React-Admin v2, use version 2.x of this package.
+- For React-Admin v1, use version 1.x of this package.
 
 ## License
 
