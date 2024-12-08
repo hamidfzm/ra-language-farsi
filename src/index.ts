@@ -33,9 +33,9 @@ const farsiMessages: TranslationMessages = {
       unselect: 'عدم انتخاب',
       expand: 'بگستر',
       close: 'ببند',
+      open_menu: 'باز کردن منو',
       close_menu: 'بستن منو',
       update: 'بروز‌رسانی',
-      open_menu: 'باز کردن منو',
       move_up: 'بالا بردن',
       move_down: 'پایین آوردن',
       open: 'باز کن',
@@ -59,6 +59,8 @@ const farsiMessages: TranslationMessages = {
       show: '%{name} #%{id}',
       empty: 'هنوز سطری از %{name} وجود ندارد.',
       invite: 'آیا میخواهید یک مورد اضافه کنید؟',
+      access_denied: 'دسترسی رد شد',
+      authentication_error: 'خطای احراز هویت',
     },
     input: {
       file: {
@@ -91,11 +93,11 @@ const farsiMessages: TranslationMessages = {
         'آیا از حذف  %{name} اطمینان دارید؟ |||| آیا از حدف %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
       bulk_delete_title:
         'حذف %{name} |||| حذف %{smart_count} عدد از آیتم‌های %{name}',
-      clear_array_input: 'آیا از حذف همه‌ی مقادیر اطمینان دارید؟',
       bulk_update_content:
         'آیا از بروز‌رسانی %{name} اطمینان ذارید؟ |||| آیا از بروز‌رسانی %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
       bulk_update_title:
         'بروز‌رسانی %{name} |||| بروز‌رسانی %{smart_count} %{name}',
+      clear_array_input: 'آیا از حذف همه‌ی مقادیر اطمینان دارید؟',
       delete_content: 'آیا از حذف این آیتم اطمینان دارید؟',
       delete_title: 'حذف %{name} #%{id}',
       details: 'جزییات',
@@ -108,8 +110,13 @@ const farsiMessages: TranslationMessages = {
       yes: 'بله',
       unsaved_changes:
         'تغییرات شما ذخیره نشده اند. آیا مطمئن هستید که می خواهید از آنها چشم پوشی کنید؟',
+      access_denied: 'شما مجوزهای مناسب برای دسترسی به این صفحه را ندارید',
+      authentication_error:
+        'سرور احراز هویت خطایی را برگرداند و اعتبار شما قابل بررسی نیست.',
     },
     navigation: {
+      clear_filters: 'پاکسازی فیلترها',
+      no_filtered_results: 'هیچ %{name} با استفاده از فیلترهای فعلی یافت نشد.',
       no_results: 'نتیجه‌ای پیدا نشد',
       no_more_results:
         'شماره صفحه‌ی %{page} خارج از محدوده مجاز است. صفحه قبل را امتحان کنید.',
@@ -166,6 +173,7 @@ const farsiMessages: TranslationMessages = {
       email: 'باید یک آدرس ایمیل صحیح باشد',
       oneOf: 'باید انتخابی از این گزینه‌ها باشد: %{options}',
       regex: 'باید با فرمت خاصی هماهنگ باشد (regexp): %{pattern}',
+      unique: 'باید منحصر به فرد باشد',
     },
     saved_queries: {
       label: 'کوئری‌های ذخیره‌شده',
@@ -178,6 +186,32 @@ const farsiMessages: TranslationMessages = {
       remove_message:
         'آیا از حذف آینم از لیست کوئری‌های ذخیره شده اطمینان دارید؟',
       help: 'لیست را فیلتر کنید و کوئری را برای استفاده بعدی ذخیره کنید',
+    },
+    configurable: {
+      customize: 'سفارشی‌سازی',
+      configureMode: 'این صفحه را پیکربندی کنید',
+      inspector: {
+        title: 'بازرس',
+        content:
+          'عناصر رابط کاربری برنامه را نگه دارید تا آنها را پیکربندی کنید',
+        reset: 'بازنشانی تنظیمات',
+        hideAll: 'پنهان همه',
+        showAll: 'نمایش همه',
+      },
+      Datagrid: {
+        title: 'شبکه داده',
+        unlabeled: 'ستون بدون برچسب #%{column}',
+      },
+      SimpleForm: {
+        title: 'فرم',
+        unlabeled: 'ورودی بدون برچسب #%{input}',
+      },
+      SimpleList: {
+        title: 'فهرست',
+        primaryText: 'متن اولیه',
+        secondaryText: 'متن ثانویه',
+        tertiaryText: 'متن سوم',
+      },
     },
   },
 };
