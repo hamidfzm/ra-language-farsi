@@ -61,7 +61,14 @@ Or Pure JS:
 document.getElementsByTagName("body")[0].setAttribute('dir', 'rtl');
 ```
 
-2. Define a theme and set `direction` to `rtl`. Also defining an RTL theme might be not enough to flip all React Admin components. So we use [**jss-rtl**](https://github.com/alitaheri/jss-rtl) plugin to make sure everything works properly.
+2. Change the theme direction ([MUI theme direction](https://mui.com/material-ui/customization/right-to-left/#2-set-the-theme-direction))
+```javascript
+import { defaultTheme } from "react-admin";
+import { deepmerge } from "@mui/utils";
+
+const theme = deepmerge(defaultTheme, { direction: "rtl" });
+```
+
 
 ```javascript
 import { createTheme } from '@material-ui/core/styles';
