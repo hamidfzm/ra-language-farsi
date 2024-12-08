@@ -69,26 +69,26 @@ import { deepmerge } from "@mui/utils";
 const theme = deepmerge(defaultTheme, { direction: "rtl" });
 ```
 
+3. Configure RTL style plugin ([MUI doc](https://mui.com/material-ui/customization/right-to-left/#3-configure-rtl-style-plugin))
 
 ```javascript
-import { createTheme } from '@material-ui/core/styles';
-import {create} from 'jss';
-import rtl from 'jss-rtl';
-import {StylesProvider, jssPreset} from '@material-ui/core/styles';
+import { CacheProvider } from "@emotion/react";
+import createCache from "@emotion/cache";
+import { prefixer } from "stylis";
+import rtlPlugin from "stylis-plugin-rtl";
 
-// Configure JSS
-const jss = create({plugins: [...jssPreset().plugins, rtl()]});
-
-const theme = createTheme({
-  direction: 'rtl',
+// Configure cache
+const cacheRtl = createCache({
+    key: "muirtl",
+    stylisPlugins: [prefixer, rtlPlugin],
 });
 
 const App = () => (
-    <StylesProvider jss={jss}>
+   <CacheProvider value={cacheRtl}>
         <Admin theme={theme}>
             // ...
         </Admin>
-    </StylesProvider>
+    </CacheProvider>
 );
 ```
 
