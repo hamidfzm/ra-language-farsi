@@ -1,6 +1,6 @@
 {
   "name": "ra-language-farsi",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "Farsi translations for React-Admin, the frontend framework for building admin applications on top of REST/GraphQL services.",
   "main": "lib/index.js",
   "module": "esm/index.js",
