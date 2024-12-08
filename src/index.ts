@@ -33,9 +33,9 @@ const farsiMessages: TranslationMessages = {
       unselect: 'عدم انتخاب',
       expand: 'بگستر',
       close: 'ببند',
+      open_menu: 'باز کردن منو',
       close_menu: 'بستن منو',
       update: 'بروز‌رسانی',
-      open_menu: 'باز کردن منو',
       move_up: 'بالا بردن',
       move_down: 'پایین آوردن',
       open: 'باز کن',
@@ -91,11 +91,11 @@ const farsiMessages: TranslationMessages = {
         'آیا از حذف  %{name} اطمینان دارید؟ |||| آیا از حدف %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
       bulk_delete_title:
         'حذف %{name} |||| حذف %{smart_count} عدد از آیتم‌های %{name}',
-      clear_array_input: 'آیا از حذف همه‌ی مقادیر اطمینان دارید؟',
       bulk_update_content:
         'آیا از بروز‌رسانی %{name} اطمینان ذارید؟ |||| آیا از بروز‌رسانی %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
       bulk_update_title:
         'بروز‌رسانی %{name} |||| بروز‌رسانی %{smart_count} %{name}',
+      clear_array_input: 'آیا از حذف همه‌ی مقادیر اطمینان دارید؟',
       delete_content: 'آیا از حذف این آیتم اطمینان دارید؟',
       delete_title: 'حذف %{name} #%{id}',
       details: 'جزییات',
