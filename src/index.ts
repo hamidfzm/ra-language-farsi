@@ -23,9 +23,12 @@ const farsiMessages: TranslationMessages = {
       remove_filter: 'حذف این فیلتر',
       remove_all_filters: 'حذف همه‌ی فیلترها',
       remove: 'حذف',
+      reset: 'بازنشانی',
       save: 'ذخیره',
       search: 'جست‌وجو',
+      search_columns: 'جست‌وجو در ستون‌ها',
       select_all: 'انتخاب همه',
+      select_all_button: 'انتخاب همه',
       select_row: 'انتخاب این سطر',
       show: 'نمایش',
       sort: 'مرتب‌سازی',
@@ -39,26 +42,26 @@ const farsiMessages: TranslationMessages = {
       move_up: 'بالا بردن',
       move_down: 'پایین آوردن',
       open: 'باز کن',
-      toggle_theme: 'تغییر تم',
+      toggle_theme: 'تغییر حالت روشن/تاریک',
       select_columns: 'ستون‌ها',
-      update_application: 'بروز‌رسانی برنامه',
+      update_application: 'بارگذاری مجدد برنامه',
     },
     boolean: {
       true: 'بله',
       false: 'خیر',
-      null: ' ',
+      null: ' ',
     },
     page: {
       create: 'ایجاد %{name}',
       dashboard: 'داشبورد',
-      edit: '%{name} #%{id}',
+      edit: '%{name} %{recordRepresentation}',
       error: 'مشکلی ایجاد شد',
-      list: 'لیست %{name}',
-      loading: 'در حال بارگزاری',
+      list: '%{name}',
+      loading: 'در حال بارگذاری',
       not_found: 'پیدا نشد',
-      show: '%{name} #%{id}',
+      show: '%{name} %{recordRepresentation}',
       empty: 'هنوز سطری از %{name} وجود ندارد.',
-      invite: 'آیا میخواهید یک مورد اضافه کنید؟',
+      invite: 'آیا می‌خواهید یک مورد اضافه کنید؟',
       access_denied: 'دسترسی رد شد',
       authentication_error: 'خطای احراز هویت',
     },
@@ -67,13 +70,13 @@ const farsiMessages: TranslationMessages = {
         upload_several:
           'تعدادی فایل برای آپلود دراپ کنید، یا برای انتخاب آن‌ها کلیک کنید.',
         upload_single:
-          'فایلی را برای آپلود دراپ کنید، یا برای انتخاب آن کلیک کنید',
+          'فایلی را برای آپلود دراپ کنید، یا برای انتخاب آن کلیک کنید.',
       },
       image: {
         upload_several:
           'تعدادی عکس برای آپلود دراپ کنید، یا برای انتخاب آن‌ها کلیک کنید.',
         upload_single:
-          'عکسی را برای آپلود دراپ کنید، یا برای انتخاب آن کلیک کنید',
+          'عکسی را برای آپلود دراپ کنید، یا برای انتخاب آن کلیک کنید.',
       },
       references: {
         all_missing: 'امکان پیدا کردن اطلاعات ارجاعی وجود ندارد.',
@@ -87,32 +90,35 @@ const farsiMessages: TranslationMessages = {
     },
     message: {
       about: 'درباره',
-      are_you_sure: 'آیا اطمینان دارید ؟',
-      auth_error: 'خطا در احراز هویت',
+      access_denied: 'شما مجوزهای مناسب برای دسترسی به این صفحه را ندارید',
+      are_you_sure: 'آیا اطمینان دارید؟',
+      authentication_error:
+        'سرور احراز هویت خطایی را برگرداند و اعتبار شما قابل بررسی نیست.',
+      auth_error: 'خطایی هنگام بررسی توکن احراز هویت رخ داد.',
       bulk_delete_content:
-        'آیا از حذف  %{name} اطمینان دارید؟ |||| آیا از حدف %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
+        'آیا از حذف این %{name} اطمینان دارید؟ |||| آیا از حذف %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
       bulk_delete_title:
         'حذف %{name} |||| حذف %{smart_count} عدد از آیتم‌های %{name}',
       bulk_update_content:
-        'آیا از بروز‌رسانی %{name} اطمینان ذارید؟ |||| آیا از بروز‌رسانی %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
+        'آیا از بروز‌رسانی %{name} %{recordRepresentation} اطمینان دارید؟ |||| آیا از بروز‌رسانی %{smart_count} عدد از آیتم‌ها اطمینان دارید؟',
       bulk_update_title:
-        'بروز‌رسانی %{name} |||| بروز‌رسانی %{smart_count} %{name}',
+        'بروز‌رسانی %{name} %{recordRepresentation} |||| بروز‌رسانی %{smart_count} عدد از آیتم‌های %{name}',
       clear_array_input: 'آیا از حذف همه‌ی مقادیر اطمینان دارید؟',
-      delete_content: 'آیا از حذف این آیتم اطمینان دارید؟',
-      delete_title: 'حذف %{name} #%{id}',
+      delete_content: 'آیا از حذف این %{name} اطمینان دارید؟',
+      delete_title: 'حذف %{name} %{recordRepresentation}',
       details: 'جزییات',
       error: 'خطایی در مرورگر رخ داد. درخواست شما کامل نشد',
       invalid_form: 'فرم درست پر نشده است. لطفا خطاها را بررسی کنید',
-      loading: 'صفحه در حال بارگزاری است، چند لحظه صبر کنید',
+      loading: 'صفحه در حال بارگذاری است، چند لحظه صبر کنید',
       no: 'خیر',
       not_found:
         'شما یک نشانی اینترنتی اشتباه تایپ کردید یا پیغام بدی را دنبال کردید.',
-      yes: 'بله',
+      select_all_limit_reached:
+        'تعداد آیتم‌ها برای انتخاب همه بیش از حد است. تنها %{max} آیتم اول انتخاب شدند.',
       unsaved_changes:
-        'تغییرات شما ذخیره نشده اند. آیا مطمئن هستید که می خواهید از آنها چشم پوشی کنید؟',
-      access_denied: 'شما مجوزهای مناسب برای دسترسی به این صفحه را ندارید',
-      authentication_error:
-        'سرور احراز هویت خطایی را برگرداند و اعتبار شما قابل بررسی نیست.',
+        'تغییرات شما ذخیره نشده‌اند. آیا مطمئن هستید که می‌خواهید از آن‌ها چشم‌پوشی کنید؟',
+      yes: 'بله',
+      placeholder_data_warning: 'مشکل شبکه: بروز‌رسانی داده‌ها انجام نشد.',
     },
     navigation: {
       clear_filters: 'پاکسازی فیلترها',
@@ -129,14 +135,14 @@ const farsiMessages: TranslationMessages = {
       current_page: 'صفحه %{page}',
       page: 'برو به صفحه %{page}',
       first: 'برو به صفحه اول',
-      last: 'برو به صفحه‌ آخر',
+      last: 'برو به صفحه آخر',
       next: 'بعدی',
       previous: 'قبلی',
       page_rows_per_page: 'تعداد ردیف‌ها در صفحه:',
       skip_nav: 'رفتن به محتوا',
     },
     sort: {
-      sort_by: 'مرتب‌سازی بر اساس %{field} %{order}',
+      sort_by: 'مرتب‌سازی بر اساس %{field_lower_first} %{order}',
       ASC: 'صعودی',
       DESC: 'نزولی',
     },
@@ -145,23 +151,27 @@ const farsiMessages: TranslationMessages = {
       user_menu: 'پروفایل',
       username: 'نام‌کاربری',
       password: 'رمز عبور',
+      email: 'ایمیل',
       sign_in: 'ورود',
       sign_in_error: 'شناسایی با شکست مواجه شد، دوباره تلاش کنید',
       logout: 'خروج',
     },
     notification: {
-      updated: 'المان بروز‌رسانی شد',
+      updated:
+        'المان بروز‌رسانی شد |||| %{smart_count} المان بروز‌رسانی شدند',
       created: 'المان ایجاد شد',
-      deleted: 'المان حذف شد',
+      deleted: 'المان حذف شد |||| %{smart_count} المان حذف شدند',
       bad_item: 'المان اشتباه',
       item_doesnt_exist: 'المان پیدا نشد',
       http_error: 'خطا در برقراری ارتباط با سرور',
-      data_provider_error: 'خطا در دریافت اطلاعات',
-      i18n_error: 'بارگزاری ترجمه‌ها برای زبان مورد نظر امکان‌پذیر نیست',
+      data_provider_error:
+        'خطای dataProvider. برای جزییات کنسول را بررسی کنید.',
+      i18n_error: 'بارگذاری ترجمه‌ها برای زبان مورد نظر امکان‌پذیر نیست',
       canceled: 'لغو شد',
-      logged_out: 'نشست کاربری شما به پایان زسیده‌است، لطفا دوباره وصل شوید.',
+      logged_out: 'نشست کاربری شما به پایان رسیده‌است، لطفا دوباره وصل شوید.',
       not_authorized: 'شما اجازه دسترسی به این منبع را ندارید',
-      application_update_available: 'نسخه جدید برنامه در دسترس است',
+      application_update_available: 'نسخه جدید برنامه در دسترس است.',
+      offline: 'اتصال اینترنت برقرار نیست. امکان دریافت اطلاعات وجود ندارد.',
     },
     validation: {
       required: 'اجباری',
@@ -182,10 +192,16 @@ const farsiMessages: TranslationMessages = {
       new_dialog_title: 'ذخیره کوئری فعلی به عنوان',
       remove_label: 'حذف کوئری ذخیره شده',
       remove_label_with_name: 'حذف کوئری "%{name}"',
-      remove_dialog_title: 'کوئری ذخیره شده حدف شود؟',
+      remove_dialog_title: 'کوئری ذخیره شده حذف شود؟',
       remove_message:
-        'آیا از حذف آینم از لیست کوئری‌های ذخیره شده اطمینان دارید؟',
+        'آیا از حذف آیتم از لیست کوئری‌های ذخیره شده اطمینان دارید؟',
       help: 'لیست را فیلتر کنید و کوئری را برای استفاده بعدی ذخیره کنید',
+    },
+    guesser: {
+      empty: {
+        title: 'داده‌ای برای نمایش وجود ندارد',
+        message: 'لطفا dataProvider خود را بررسی کنید',
+      },
     },
     configurable: {
       customize: 'سفارشی‌سازی',
@@ -193,7 +209,7 @@ const farsiMessages: TranslationMessages = {
       inspector: {
         title: 'بازرس',
         content:
-          'عناصر رابط کاربری برنامه را نگه دارید تا آنها را پیکربندی کنید',
+          'عناصر رابط کاربری برنامه را نگه دارید تا آن‌ها را پیکربندی کنید',
         reset: 'بازنشانی تنظیمات',
         hideAll: 'پنهان همه',
         showAll: 'نمایش همه',
