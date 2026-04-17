@@ -157,8 +157,7 @@ const farsiMessages: TranslationMessages = {
       logout: 'خروج',
     },
     notification: {
-      updated:
-        'المان بروز‌رسانی شد |||| %{smart_count} المان بروز‌رسانی شدند',
+      updated: 'المان بروز‌رسانی شد |||| %{smart_count} المان بروز‌رسانی شدند',
       created: 'المان ایجاد شد',
       deleted: 'المان حذف شد |||| %{smart_count} المان حذف شدند',
       bad_item: 'المان اشتباه',

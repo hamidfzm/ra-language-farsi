@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+# yarn berry / corepack (project uses yarn 1)
+/.yarn
+.yarnrc.yml
+.pnp.*
+
 # misc
 .DS_Store
 .env.local
